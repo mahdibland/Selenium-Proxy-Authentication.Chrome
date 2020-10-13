@@ -16,7 +16,7 @@ Install-Package SeleniumProxyAuthentication.Chrome -Version 1.0.0
 - For adding proxy
 
 ```C#
-ChromeOptions chromeOption = new ChromeOptions();
+ChromeOptions chromeOptions = new ChromeOptions();
 chromeOptions.AddProxyAuthenticationExtension(new SeleniumProxyAuthentication.Proxy(
                     ProxyProtocols.HTTP,
                     "Your Porxy"
