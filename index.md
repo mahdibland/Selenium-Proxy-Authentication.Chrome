@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+## Selenium Proxy Authentication For Chrome
 
-You can use the [editor on GitHub](https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+> Easily add your auth proxies to your chrome Driver with one line of code
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+ChromeOptions chromeOption = new ChromeOptions();
+chromeOptions.AddProxyAuthenticationExtension(new SeleniumProxyAuthentication.Proxy(
+                    ProxyProtocols.HTTP,
+                    "Your Porxy"
+                    ));
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Proxy Format
 
-### Jekyll Themes
+- Host:Port:Username:Password
+- Host:Port
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Program Design
 
-### Support or Contact
+<img src="https://i.ibb.co/Yym4NFL/main.png" width="600"/>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Guide
+
+- You can put your text in right box and the result will appear in left box and you can copy the result by click on "Encode" icon
+<img src="https://i.ibb.co/c1rC9jz/right.png" width="600"/>
+
+- And you can put your Encoded text in left box and the result will appear in right box and you can copy the result by click on "Decode" icon
+<img src="https://i.ibb.co/nQHvPw7/left.png" width="600"/>
+
+- Also there is a little helper when you run the program for the first time
+
+## Supported Encoding Types
+
+> See Here : <a href="https://ghostbin.co/paste/kox5f">Enc<a/>
+
+## Contact
+
+> Email: mahdi.blandsoft98.ir@gmail.com<br/>
+> Telegram: https://t.me/HERO_OTOES<br />
+> Discord: <a href="mahdibland#4828">mahdibland#4828<a/><br/>
+    
+## Licence
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/mahdibland/Base64-Encoder-Decoder)
+
