@@ -4,8 +4,7 @@
 
 ## Installation
 
-> You Can Simply Add this Library to your project with Nuget Package:
-[![Nuget](NugetPackage)](https://nuget.com/NugetLink)
+> You Can Simply Add this Library to your project with Nuget Package: <img src="https://www.nuget.org/Content/gallery/img/logo-header.svg" width="50" height="40" href="https://nuget.com/NugetLink" />
 
 ## How to Use it
 
