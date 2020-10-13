@@ -7,6 +7,9 @@
 > You Can Simply Add this Library to your project with Nuget Package: <a href="https://www.nuget.org/packages/SeleniumProxyAuthentication.Chrome/">
     <img src="https://www.nuget.org/Content/gallery/img/logo-header.svg" width="80" height="25"/>
     </a>
+```markdown
+Install-Package SeleniumProxyAuthentication.Chrome -Version 1.0.0
+```
 
 ## How to Use it
 
