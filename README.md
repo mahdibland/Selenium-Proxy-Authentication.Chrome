@@ -38,4 +38,4 @@ new ChromeOptions().DeleteExtensionsCache();
     
 ## Licence
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/mahdibland/Base64-Encoder-Decoder)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome)
