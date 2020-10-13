@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <PackageId>SeleniumProxyAuthentication.Chrome</PackageId>
+    <Authors>MahdiBland</Authors>
+    <Description>Providing Support of Auth, Chain, Rotating Proxies For Selenium Chrome Driver
+Support Only HTTP Proxies (Chrome Not Support Socks4&amp;5 For Now)</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>Auth, Authentication, HTTP, Chain, Rotating, Proxy, Proxies, Selenium, Chrome, ChromeDriver, WebDriver, username, password</PackageTags>
+    <Product>Selenium Proxy Authentication</Product>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>chrome-logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\chrome-logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
