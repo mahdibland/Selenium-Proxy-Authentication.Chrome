@@ -13,20 +13,35 @@ Install-Package SeleniumProxyAuthentication.Chrome -Version 2.0.0
 
 ## How to Use it
 
-- For adding proxy
+- Create a global chrome option
 
 ```C#
-ChromeOptions chromeOptions = new();
-chromeOptions.AddProxyAuthenticationExtension(new SeleniumProxyAuthentication.Proxy(
+private static readonly ChromeOptions ChromeOptions = new();
+```
+ 
+- Attach your proxy to the chrome option using the extension method that comes with nuget package
+
+```C
+ChromeOptions.AddProxyAuthenticationExtension(new SeleniumProxyAuthentication.Proxy(
                     ProxyProtocols.HTTP,
                     "host:port:username:password"
                     ));
 ```
+
+- Cretae chrome driver and use the chrome option
+
+```C#
+IWebDriver driver = new ChromeDriver(ChromeOptions);
+driver.Navigate().GoToUrl(new Uri("https://github.com"));
+```
+
 - Remove Entire Cache That Created By Extensions (In the Dispose Function)
 
 ```C#
 chromeOptions.DeleteExtensionsCache();
 ```
+
+* also see the sample project to see how it's work <a href="https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome/blob/main/SeleniumProxyAuthentication.Sample/Program.cs">Link to sample project</a>
 
 ##  Guides
 
