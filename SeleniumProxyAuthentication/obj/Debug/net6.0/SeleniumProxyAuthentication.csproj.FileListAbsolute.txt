@@ -1,0 +1,12 @@
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\bin\Debug\net6.0\SeleniumProxyAuthentication.deps.json
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\bin\Debug\net6.0\SeleniumProxyAuthentication.dll
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\bin\Debug\net6.0\ref\SeleniumProxyAuthentication.dll
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\bin\Debug\net6.0\SeleniumProxyAuthentication.pdb
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\obj\Debug\net6.0\SeleniumProxyAuthentication.csproj.AssemblyReference.cache
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\obj\Debug\net6.0\SeleniumProxyAuthentication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\obj\Debug\net6.0\SeleniumProxyAuthentication.AssemblyInfoInputs.cache
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\obj\Debug\net6.0\SeleniumProxyAuthentication.AssemblyInfo.cs
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\obj\Debug\net6.0\SeleniumProxyAuthentication.csproj.CoreCompileInputs.cache
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\obj\Debug\net6.0\SeleniumProxyAuthentication.dll
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\obj\Debug\net6.0\ref\SeleniumProxyAuthentication.dll
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication\obj\Debug\net6.0\SeleniumProxyAuthentication.pdb

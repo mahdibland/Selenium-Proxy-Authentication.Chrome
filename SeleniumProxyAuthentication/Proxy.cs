@@ -21,6 +21,8 @@ namespace SeleniumProxyAuthentication
             {
                 this.Credential = new NetworkCredential(proxyDetails[2],proxyDetails[3]);
             }
+
+            HasCredential = proxyDetails.Length == 4;
         }
         /// <summary>
         /// Proxy Host
@@ -30,13 +32,19 @@ namespace SeleniumProxyAuthentication
         /// Proxy Port
         /// </summary>
         public int Port { get; private set; }
+
         /// <summary>
         /// Proxy Credential
         /// </summary>
-        public NetworkCredential Credential { get; private set; }
+        public NetworkCredential Credential { get; private set; } = new NetworkCredential("", "");
         /// <summary>
         /// Proxy Protocol
         /// </summary>
         public ProxyProtocols ProxyProtocol { get; private set; }
+
+        /// <summary>
+        /// Check the proxy has user and password
+        /// </summary>
+        public bool HasCredential { get; private set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <LangVersion>8.0</LangVersion>
     <PackageId>SeleniumProxyAuthentication.Chrome</PackageId>
     <Authors>MahdiBland</Authors>
@@ -15,7 +15,12 @@ Support Only HTTP Proxies (Chrome Not Support Socks4&amp;5 For Now)</Description
     <PackageIcon>chrome-logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</RepositoryUrl>
     <PackageProjectUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</PackageProjectUrl>
+    <ApplicationIcon>chrome-logo.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="chrome-logo.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
@@ -23,9 +28,9 @@ Support Only HTTP Proxies (Chrome Not Support Socks4&amp;5 For Now)</Description
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\Desktop\chrome-logo.png">
+    <None Update="chrome-logo.png">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 

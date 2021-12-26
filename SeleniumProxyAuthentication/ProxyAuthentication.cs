@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using System.Runtime.InteropServices;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 
 namespace SeleniumProxyAuthentication
 {
@@ -13,10 +15,25 @@ namespace SeleniumProxyAuthentication
         /// Add Proxy With Extension To Chrome Option (Chrome Only Support Http Auth Proxies (!Didn't Test It With Socks4 Auth Proxies))
         /// </summary>
         /// <param name="chromeOptions"></param>
+        /// <param name="browserOption">You Can Use Edge or Chrome for now</param>
         /// <param name="proxy">Your Proxy With This Format host:port or host:port:user:pass as string</param>
         /// <param name="crxManifest">Edit Chrome Extension Manifest File (Leave it Empty If You Don't Want To Change It)</param>
-        public static void AddProxyAuthenticationExtension(this ChromeOptions chromeOptions, Proxy proxy, [Optional] CrxManifest crxManifest)
+        public static void AddProxyAuthenticationExtension<T>(this T browserOption, Proxy proxy, [Optional] CrxManifest crxManifest)
         {
+            //easy set if there is no auth proxy
+            if (!proxy.HasCredential)
+            {
+                (browserOption as ChromeOptions)?.AddArgument($"--proxy-server={GenerateCrx.GetScheme(proxy.ProxyProtocol)}://{proxy.Host}:{proxy.Port}");
+                return;
+            }
+
+            // not supported in google chrome
+            //if (proxy.ProxyProtocol == ProxyProtocols.SOCKS5)
+            //{
+            //    (browserOption as ChromeOptions)?.AddArgument($"--proxy-server=socks://{proxy.Credential.UserName}:{proxy.Credential.Password}@{proxy.Host}:{proxy.Port}");
+            //    return;
+            //}
+
             var cachePath = Utilities.GetCachePath();
 
             var tempFolder = Utilities.GetTempFolder(cachePath, proxy);
@@ -28,7 +45,15 @@ namespace SeleniumProxyAuthentication
 
             Utilities.WriteDetailsFiles(crxManifest, manifestLocation, backgroundLocation, proxy);
 
-            chromeOptions.AddExtension(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
+            if (browserOption is ChromeOptions chromeOptions)
+            {
+                chromeOptions.AddExtension(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
+            }
+
+            if (browserOption is EdgeOptions edgeOptions)
+            {
+                edgeOptions.AddExtensionPath(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
+            }
         }
         /// <summary>
         /// Delete All Files That Made By Extensions

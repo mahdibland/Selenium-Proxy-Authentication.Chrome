@@ -2,12 +2,13 @@
 {
     /// <summary>
     /// Proxy Protocols Type
+    /// Only the HTTP Proxies will Work
     /// </summary>
     public enum ProxyProtocols
     {
         HTTP,
         SOCKS4,
-        SOCKS4A,
-        SOCKS5
+        SOCKS5,
+        HTTPS
     }
 }

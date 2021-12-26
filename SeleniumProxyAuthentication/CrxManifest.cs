@@ -2,6 +2,9 @@
 
 namespace SeleniumProxyAuthentication
 {
+    /// <summary>
+    /// no need to refactor the names it will cause issues
+    /// </summary>
     public class CrxManifest
     {
         public string version { get; set; }
