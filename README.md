@@ -53,8 +53,7 @@ chromeOptions.DeleteExtensionsCache();
 ## Contact
 
 > Email: mahdi.blandsoft98.ir@gmail.com<br/>
-> Telegram: https://t.me/HERO_OTOES<br />
-> Discord: <a href="mahdibland#4828">mahdibland#4828<a/><br/>
+> Telegram: https://t.me/ONll_CH4N<br />
     
 ## Licence
 
