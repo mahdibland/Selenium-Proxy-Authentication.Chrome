@@ -18,3 +18,4 @@ C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAu
 C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication.Sample\obj\Debug\net6.0\ref\SeleniumProxyAuthentication.Sample.dll
 C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication.Sample\obj\Debug\net6.0\SeleniumProxyAuthentication.Sample.pdb
 C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication.Sample\obj\Debug\net6.0\SeleniumProxyAuthentication.Sample.genruntimeconfig.cache
+C:\Users\mahdi\Source\Repos\Selenium-Proxy-Authentication.Chrome\SeleniumProxyAuthentication.Sample\bin\Debug\net6.0\System.Text.Json.dll

@@ -16,6 +16,7 @@ Support Only HTTP Proxies (Chrome Not Support Socks4&amp;5 For Now)</Description
     <RepositoryUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</RepositoryUrl>
     <PackageProjectUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</PackageProjectUrl>
     <ApplicationIcon>chrome-logo.ico</ApplicationIcon>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,7 +25,7 @@ Support Only HTTP Proxies (Chrome Not Support Socks4&amp;5 For Now)</Description
 
   <ItemGroup>
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
-    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+    <PackageReference Include="System.Text.Json" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
