@@ -21,7 +21,7 @@ private static readonly ChromeOptions ChromeOptions = new();
  
 - Attach your proxy to the chrome option using the extension method that comes with nuget package
 
-```C
+```C#
 ChromeOptions.AddProxyAuthenticationExtension(new SeleniumProxyAuthentication.Proxy(
                     ProxyProtocols.HTTP,
                     "host:port:username:password"
