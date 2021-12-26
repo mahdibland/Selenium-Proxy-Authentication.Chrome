@@ -16,16 +16,16 @@ Install-Package SeleniumProxyAuthentication.Chrome -Version 1.0.0
 - For adding proxy
 
 ```C#
-ChromeOptions chromeOptions = new ChromeOptions();
+ChromeOptions chromeOptions = new();
 chromeOptions.AddProxyAuthenticationExtension(new SeleniumProxyAuthentication.Proxy(
                     ProxyProtocols.HTTP,
-                    "Your Porxy"
+                    "host:port:username:password"
                     ));
 ```
-- Remove Entire Cache That Created By Extensions
+- Remove Entire Cache That Created By Extensions (In the Dispose Function)
 
 ```C#
-new ChromeOptions().DeleteExtensionsCache();
+chromeOptions.DeleteExtensionsCache();
 ```
 
 ##  Guides
