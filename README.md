@@ -13,6 +13,14 @@ Install-Package SeleniumProxyAuthentication.Chrome -Version 2.0.0
 
 ## How to Use it
 
+- First you need to download the chrome driver from here (make sure that the version of your chrome browser should be match with the version of chrome driver that your download!)
+
+```
+https://chromedriver.chromium.org/downloads
+```
+
+- Then put the chromedriver.exe in your project directory
+
 - Create a global chrome option
 
 ```C#
