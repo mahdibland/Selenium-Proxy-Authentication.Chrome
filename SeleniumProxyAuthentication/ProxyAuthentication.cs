@@ -50,10 +50,10 @@ namespace SeleniumProxyAuthentication
                 chromeOptions.AddExtension(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
             }
 
-            if (browserOption is EdgeOptions edgeOptions)
-            {
-                edgeOptions.AddExtensionPath(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
-            }
+            //if (browserOption is EdgeOptions edgeOptions)
+            //{
+            //    edgeOptions.AddExtensionPath(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
+            //}
         }
         /// <summary>
         /// Delete All Files That Made By Extensions
