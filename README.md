@@ -18,7 +18,6 @@ Install-Package SeleniumProxyAuthentication.Chrome -Version 2.0.0
 ```
 https://chromedriver.chromium.org/downloads
 ```
-
 - Then put the chromedriver.exe in your project directory
 
 - Create a global chrome option
