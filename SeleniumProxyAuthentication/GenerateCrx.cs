@@ -63,7 +63,7 @@ chrome.webRequest.onAuthRequired.addListener(
     { urls: [""<all_urls>""]},
     ['blocking']
 );
-chrome.proxy.onRequest.addListener(proxyRequest, { urls: [""<all_urls>""]});"
+chrome.proxy.onRequest.addListener(proxyRequest, { urls: [""<all_urls>""]})";
     }
 }
 
