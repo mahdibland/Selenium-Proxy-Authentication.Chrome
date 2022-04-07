@@ -38,27 +38,32 @@ namespace SeleniumProxyAuthentication
         internal static Func<Proxy,string> GenerateCrxCode = proxy => 
 $@"
 var config2 = {{
-                mode: ""fixed_servers"",
-                rules: {{
-                    " + GetProxyRule(proxy) + @": {
-                        scheme: '" + GetScheme(proxy.ProxyProtocol) + @"',
-                        host: '" + GetScheme(proxy.ProxyProtocol) + "://" + proxy.Host + @"',
-                        port: " + proxy.Port + @"
-                    }
-                }
-            }
-
-
-chrome.proxy.settings.set({value: config2, scope: 'regular'}, function(config) {    console.log(JSON.stringify(config));  });
-
+mode: ""fixed_servers"",
+rules: {{
+    " + GetProxyRule(proxy) + @": {
+        scheme: '" + GetScheme(proxy.ProxyProtocol) + @"',
+        host: '" + proxy.Host + @"',
+        port: " + proxy.Port + @"
+    },
+    bypassList: []
+}
+}
+function proxyRequest(request_data)
+{
+    return {
+        type: '" + GetScheme(proxy.ProxyProtocol) + @"',
+        host: '" + proxy.Host + @"', 
+        port: " + proxy.Port + @"
+    };
+}
+chrome.proxy.settings.set({ value: config2, scope: ""regular""}, function() { });
 function callbackFn(details) {return {authCredentials: {username: '" + proxy.Credential.UserName + @"',password: '" + proxy.Credential.Password + @"'}}};
-
 chrome.webRequest.onAuthRequired.addListener(
     callbackFn,
-    { urls:['<all_urls>']},
-    ['asyncBlocking']
+    { urls: [""<all_urls>""]},
+    ['blocking']
 );
-";
+chrome.proxy.onRequest.addListener(proxyRequest, { urls: [""<all_urls>""]});"
     }
 }
 
