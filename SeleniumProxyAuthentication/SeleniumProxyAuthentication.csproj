@@ -6,9 +6,9 @@
     <PackageId>SeleniumProxyAuthentication.Chrome</PackageId>
     <Authors>MahdiBland</Authors>
     <Description>Providing Support of Auth, Chain, Rotating Proxies For Selenium Chrome Driver
-Support Only HTTP Proxies (Chrome Not Supporting Socks4&amp;5 For Now)</Description>
+Support Only HTTP/S Proxies (Chrome Not Supporting Socks4&amp;5 For Now)</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>Auth, Authentication, HTTP, Chain, Rotating, Proxy, Proxies, Selenium, Chrome, ChromeDriver, WebDriver, username, password</PackageTags>
+    <PackageTags>Auth, Proxy Authentication, HTTP, Chain, Rotating, Proxy, Proxies, Selenium, Chrome, ChromeDriver, WebDriver, username, password</PackageTags>
     <Product>Selenium Proxy Authentication</Product>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -16,7 +16,7 @@ Support Only HTTP Proxies (Chrome Not Supporting Socks4&amp;5 For Now)</Descript
     <RepositoryUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</RepositoryUrl>
     <PackageProjectUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</PackageProjectUrl>
     <ApplicationIcon>chrome-logo.ico</ApplicationIcon>
-    <Version>2.0.0</Version>
+    <Version>2.1.1</Version>
     <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
@@ -25,7 +25,7 @@ Support Only HTTP Proxies (Chrome Not Supporting Socks4&amp;5 For Now)</Descript
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.1.0" />
     <PackageReference Include="System.Text.Json" Version="6.0.1" />
   </ItemGroup>
 

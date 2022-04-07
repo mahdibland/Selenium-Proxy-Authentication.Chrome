@@ -35,8 +35,8 @@ namespace SeleniumProxyAuthentication
         /// Generate Js Code For Crx Background
         /// https://developer.chrome.com/docs/extensions/reference/proxy/
         /// </summary>
-        internal static Func<Proxy,string> GenerateCrxCode = proxy => 
-$@"
+        internal static Func<Proxy, string> GenerateCrxCode = proxy =>
+            $@"
 var config2 = {{
 mode: ""fixed_servers"",
 rules: {{
@@ -57,13 +57,14 @@ function proxyRequest(request_data)
     };
 }
 chrome.proxy.settings.set({ value: config2, scope: ""regular""}, function() { });
-function callbackFn(details) {return {authCredentials: {username: '" + proxy.Credential.UserName + @"',password: '" + proxy.Credential.Password + @"'}}};
+function callbackFn(details) {return {authCredentials: {username: '" + proxy.Credential.UserName + @"',password: '" +
+            proxy.Credential.Password + @"'}}};
 chrome.webRequest.onAuthRequired.addListener(
     callbackFn,
     { urls: [""<all_urls>""]},
     ['blocking']
 );
-chrome.proxy.onRequest.addListener(proxyRequest, { urls: [""<all_urls>""]});"
+chrome.proxy.onRequest.addListener(proxyRequest, { urls: [""<all_urls>""]})";
     }
 }
 

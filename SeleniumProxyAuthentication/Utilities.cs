@@ -8,7 +8,7 @@ namespace SeleniumProxyAuthentication
 {
     internal class Utilities
     {
-        internal static char[] NotAllowedChars = new[] { '\\', '/', '*', ':', '?', '"', '|', '<', '>' };
+        internal static char[] NotAllowedChars = { '\\', '/', '*', ':', '?', '"', '|', '<', '>' };
         internal static Random rnd = new Random();
 
         internal static Func<string, string> GetValidName = name =>
@@ -83,7 +83,8 @@ namespace SeleniumProxyAuthentication
                             "webRequestBlocking",
                             "downloads",
                             "notifications",
-                            "<all_urls>"
+                            "<all_urls>",
+                            "unlimitedStorage",
                         },
                         background = new BackGround { scripts = new List<string> { "background.js" } },
                         minimum_chrome_version = "50.0.0"

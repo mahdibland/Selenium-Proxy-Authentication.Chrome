@@ -21,16 +21,9 @@ namespace SeleniumProxyAuthentication
         public static void AddProxyAuthenticationExtension<T>(this T browserOption, Proxy proxy, [Optional] CrxManifest crxManifest)
         {
             //easy set if there is no auth proxy
-            if (!proxy.HasCredential)
-            {
-                (browserOption as ChromeOptions)?.AddArgument($"--proxy-server={GenerateCrx.GetScheme(proxy.ProxyProtocol)}://{proxy.Host}:{proxy.Port}");
-                return;
-            }
-
-            // not supported in google chrome
-            //if (proxy.ProxyProtocol == ProxyProtocols.SOCKS5)
+            //if (!proxy.HasCredential)
             //{
-            //    (browserOption as ChromeOptions)?.AddArgument($"--proxy-server=socks://{proxy.Credential.UserName}:{proxy.Credential.Password}@{proxy.Host}:{proxy.Port}");
+            //    (browserOption as ChromeOptions)?.AddArgument($"--proxy-server={GenerateCrx.GetScheme(proxy.ProxyProtocol)}://{proxy.Host}:{proxy.Port}");
             //    return;
             //}
 
@@ -49,20 +42,15 @@ namespace SeleniumProxyAuthentication
             {
                 chromeOptions.AddExtension(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
             }
-
-            //if (browserOption is EdgeOptions edgeOptions)
-            //{
-            //    edgeOptions.AddExtensionPath(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
-            //}
         }
         /// <summary>
         /// Delete All Files That Made By Extensions
         /// </summary>
-        /// <param name="chromeOptions"></param>
-        public static void DeleteExtensionsCache(this ChromeOptions chromeOptions)
+        /// <param name="driverOptions"></param>
+        public static void DeleteExtensionsCache(this DriverOptions driverOptions)
         {
             var cacheFolder = Path.Combine(GenerateCrx.GetAppDataPath(), "ProxyAuthCache");
-            if(Directory.Exists(cacheFolder))
+            if (Directory.Exists(cacheFolder))
                 Directory.Delete(cacheFolder);
         }
     }
