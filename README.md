@@ -8,12 +8,12 @@
     <img src="https://www.nuget.org/Content/gallery/img/logo-header.svg" width="80" height="25"/>
     </a>
 ```markdown
-Install-Package SeleniumProxyAuthentication.Chrome -Version 2.0.0
+Install-Package SeleniumProxyAuthentication.Chrome -Version 2.1.1
 ```
 
 ## How to Use it
 
-- First you need to download the chrome driver from here (make sure that the version of your chrome browser should be match with the version of chrome driver that your download!)
+- First you need to download the chrome driver from here (make sure that the version of your chrome browser should be match with the version of chrome driver that you download!)
 
 ```
 https://chromedriver.chromium.org/downloads
