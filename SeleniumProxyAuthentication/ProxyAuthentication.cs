@@ -13,7 +13,6 @@ namespace SeleniumProxyAuthentication
         /// <summary>
         /// Add Proxy With Extension To Chrome Option (Chrome Only Support Http Auth Proxies (!Didn't Test It With Socks4 Auth Proxies))
         /// </summary>
-        /// <param name="chromeOptions"></param>
         /// <param name="browserOption">You Can Use Edge or Chrome for now</param>
         /// <param name="proxy">Your Proxy With This Format host:port or host:port:user:pass as string</param>
         /// <param name="crxManifest">Edit Chrome Extension Manifest File (Leave it Empty If You Don't Want To Change It)</param>
