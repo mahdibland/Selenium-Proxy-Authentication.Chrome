@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -6,7 +6,7 @@
     <PackageId>SeleniumProxyAuthentication.Chrome</PackageId>
     <Authors>MahdiBland</Authors>
     <Description>Providing Support of Auth, Chain, Rotating Proxies For Selenium Chrome Driver
-Support Only HTTP Proxies (Chrome Not Support Socks4&amp;5 For Now)</Description>
+Support Only HTTP Proxies (Chrome Not Supporting Socks4&amp;5 For Now)</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>Auth, Authentication, HTTP, Chain, Rotating, Proxy, Proxies, Selenium, Chrome, ChromeDriver, WebDriver, username, password</PackageTags>
     <Product>Selenium Proxy Authentication</Product>
@@ -16,7 +16,8 @@ Support Only HTTP Proxies (Chrome Not Support Socks4&amp;5 For Now)</Description
     <RepositoryUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</RepositoryUrl>
     <PackageProjectUrl>https://github.com/mahdibland/Selenium-Proxy-Authentication.Chrome</PackageProjectUrl>
     <ApplicationIcon>chrome-logo.ico</ApplicationIcon>
-    <Version>1.1.0</Version>
+    <Version>2.0.0</Version>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
