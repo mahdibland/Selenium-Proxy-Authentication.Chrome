@@ -1,0 +1,10 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SeleniumProxyAuthentication/bin/Debug
+/SeleniumProxyAuthentication/obj
+/SeleniumProxyAuthentication.Sample/bin/Debug/net6.0
+/SeleniumProxyAuthentication.Sample/obj
+/.vs
+/SeleniumProxyAuthentication.sln.DotSettings.user
