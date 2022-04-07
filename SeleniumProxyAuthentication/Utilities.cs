@@ -75,23 +75,15 @@ namespace SeleniumProxyAuthentication
                         name = "Proxy Authentication",
                         permissions = new List<string>
                         {
-                            "background",
-                            "bookmarks",
-                            "clipboardRead",
-                            "clipboardWrite",
-                            "contentSettings",
-                            "contextMenus",
-                            "cookies",
-                            "debugger",
-                            "history",
-                            "idle",
-                            "management",
+                            "browsingData",
+                            "proxy",
+                            "storage",
+                            "tabs",
+                            "webRequest",
+                            "webRequestBlocking",
+                            "downloads",
                             "notifications",
-                            "pageCapture",
-                            "topSites",
-                            "webNavigation",
-                            "proxy", "tabs", "unlimitedStorage", "storage", "<all_urls>", "webRequest",
-                            "webRequestBlocking"
+                            "<all_urls>"
                         },
                         background = new BackGround { scripts = new List<string> { "background.js" } },
                         minimum_chrome_version = "50.0.0"
