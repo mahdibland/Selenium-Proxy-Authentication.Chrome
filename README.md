@@ -11,6 +11,10 @@
 Install-Package SeleniumProxyAuthentication.Chrome -Version 2.1.1
 ```
 
+## Limitations
+> Currently this library not working in the incognito browser mode</br>
+- [ ] i'm working on it and release a new version when it's completed
+
 ## How to Use it
 
 - First you need to download the chrome driver from here (make sure that the version of your chrome browser should be match with the version of chrome driver that you download!)
@@ -54,8 +58,8 @@ chromeOptions.DeleteExtensionsCache();
 
 #### Proxy Format
 
-* Host:Port:Username:Password
-* Host:Port
+* ✅ Host:Port:Username:Password</br>
+* ✅ Host:Port
 
 ## Contact
 
