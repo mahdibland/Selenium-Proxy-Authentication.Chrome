@@ -16,7 +16,7 @@ namespace SeleniumProxyAuthentication
         /// <param name="browserOption">You Can Use Edge or Chrome for now</param>
         /// <param name="proxy">Your Proxy With This Format host:port or host:port:user:pass as string</param>
         /// <param name="crxManifest">Edit Chrome Extension Manifest File (Leave it Empty If You Don't Want To Change It)</param>
-        public static void AddProxyAuthenticationExtension<T>(this T browserOption, Proxy proxy, [Optional] CrxManifest crxManifest)
+        public static void AddProxyAuthenticationExtension<T>(this T browserOption, Proxy proxy, [Optional] CrxManifest crxManifest, bool pack = true)
         {
             //easy set if there is no auth proxy
             //if (!proxy.HasCredential)
@@ -38,7 +38,14 @@ namespace SeleniumProxyAuthentication
 
             if (browserOption is ChromeOptions chromeOptions)
             {
-                chromeOptions.AddExtension(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
+                if (pack)
+                {
+                    chromeOptions.AddExtension(Utilities.CreateExtension(tempFolder, crxDetailsFolder));
+                }
+                else
+                {
+                    chromeOptions.AddArgument($"--load-extension={crxDetailsFolder}");
+                }
             }
         }
         /// <summary>
